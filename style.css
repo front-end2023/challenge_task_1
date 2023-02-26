@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: rgba(245, 245, 245, 0.5);
+}
+header{
+    background-image: url(images/blue_bg.png);
+    /* background-size: cover; */
+    background-repeat: no-repeat;
+    background-position: center -450px;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    position: relative;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 20px;
+    margin-bottom: 30px;
+}
+nav .left{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+nav .left img{
+    height: 120px;
+    padding-left: 0;
+}
+nav .left ul{
+    list-style-type: none;
+    display: flex;
+}
+nav .left ul li{
+    margin-left: 20px;
+    
+}
+nav .left ul li a{
+    color: #5c5959;
+    font-size: 15px;
+    font-weight: 550;
+}
+nav .left ul li a:hover{
+    border-bottom: 2px solid #AA72B6;
+}
+nav .right input{
+    background-color: white;
+    border-style: none;
+    outline: none;
+    padding: 10px 25px;
+    border-radius: 50px;
+    cursor: pointer;
+    color: #5c5959;
+    font-size: 14px;
+    font-weight: 550;
+    margin-right: 130px;
+}
+.sec_1{
+    width: 100%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sec_1 .tex_1{
+    width: 50%;
+    
+}
+.sec_1 .tex_1 h1{
+    font-size: 3em;
+    font-weight: 600;
+    padding-bottom: 30px;
+}
+.sec_1 .tex_1 h1 span{
+    color: #AA72B6;
+}
+.sec_1 .tex_1 p{
+    font-size: 20px;
+    line-height: 30px;
+    color: #5c5959;
+}
+.sec_1 .image_1{
+    width: 40%;
+    position: relative;
+}
+.sec_1 .image_1 .im_1{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.sec_1 .image_1 .im_2{
+    width: 40%;
+    position: absolute;
+    top: 0;
+    left: 45%;
+    transform: translate(-50%,-65%);
+}
+.sec_1 .image_1 .im_3{
+    width: 60%;
+    /* height: 130px; */
+    position: absolute;
+    right: 25%;
+    top: 50px;
+    opacity: 0.9;
+}
+
+header .image_2 img{
+    width: 80vw;
+    position: absolute;
+    right: 350px;
+    bottom: 7%;
+    opacity: 1.5;
+}
+/*          Section 2          */
+.sec_2{
+    width: 100%;
+    height: 120vh;
+    position: relative;
+    /* border: 1px solid red; */
+    margin: 0 auto;
+}
+.sec_2 .p_1{
+    position: absolute;
+    top: 0;
+    left: 50px;
+}
+.sec_2 .p_2{
+    display: block;
+    /* height: 500px; */
+    /* width: 20%; */
+    position: absolute;
+    top: -20px;
+    left: 20%;
+    transform: translate(0,0);
+}
+.sec_2 .p_2 img{
+    width: 90%;
+}
+.sec_2 .p_3{
+    position: absolute;
+    top: 42%;
+    left: 58%;
+    transform: translate(-50%,-50%);
+}
+.sec_2 .p_4{
+    position: absolute;
+    top: 100%;
+}
+.sec_2 .p_4 .content{
+    position: relative;
+    top: -300px;
+    left: 50px;
+}
+.sec_2 .p_4 .content img{
+    height: 310px;
+    position: absolute;
+    top: 50%;
+    bottom: 0;
+}
+.sec_2 .p_4 .content p{
+    width: 200px;
+    color: white;
+    font-weight: 400;
+    font-size: 0.8em;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    z-index: 3;
+}
+.sec_2 .p_4 .content p span{
+    font-size: 4em;
+}
+.sec_2 .p_5{
+    position: absolute;
+    bottom: 10px;
+    right: 40px;
+}
