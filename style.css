@@ -62,9 +62,9 @@ nav form input{
     font-size: 14px;
     font-weight: 550;
     margin-right: 200px;
-    
+    cursor: pointer;
 }
-/* nav form:hover input{
+/* nav form input:hover{
     cursor: pointer;
 } */
 .sec_1{
@@ -199,6 +199,7 @@ header .image_2{
     align-self: self-end;
 }
 .sec_2 .container_1 .p_cont_1{
+    text-align: center;
     font-size: 1.5em;
     color: #5c5959;
 }
@@ -352,7 +353,19 @@ footer{
     width: 800px;
     align-self: flex-end;
 }
-
+/*         Media Queries             */
+@media  (max-width: 1643px){
+    
+    .sec_2{
+        background-size: 80%;
+        background-position: right 40% top 30% ;
+    }
+    .sec_2 .p_1,
+    .sec_2 .p_3,
+    .sec_2 .p_4{
+        width: 200px;
+    }
+}
 @media (min-width:1400px){
     header{
         height: 900px;
@@ -360,5 +373,71 @@ footer{
     }
     .sec_1{
         margin: 100px auto;
+    }
+}
+@media (max-width:1440px){
+    .sec_4 .right .foot_img {
+        /* width: 100%; */
+        margin-left: 20px;
+    }
+    .sec_4 .right .foot_img img{
+        width: 900px;
+        align-self: flex-end;
+    }
+    .sec_2 .p_3{
+       
+        top: 57%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        /* height: calc(100%/3); */
+        align-self: center;
+    }
+}
+@media (max-width:1024px){
+    header .image_2{
+        
+        background-position:right top ;
+        width: 80%;
+        height: 350px;
+        /* border: 2px solid red; */
+        position: absolute;
+        bottom: -70px;
+        right: 25%;
+        margin: 30px 0;
+    }
+    .sec_2{
+        background-size: 100%;
+        background-position: right 20% top 10% ;
+    }
+    .sec_2 .p_5{
+        
+        left: 0;
+    }
+    .sec_3 .top{
+        width: 60%;
+    }
+    .sec_3 .top .small{
+        height: 40%;
+        align-self: flex-end;
+    }
+    .sec_3 .top .big{
+        height: 400px;
+    }
+    .sec_4 .right .foot_img {
+        width: 50%;
+        margin-right: 0;
+    }
+    .sec_4 .right .foot_img img{
+        width: 600px;
+        align-self: flex-end;
+    }
+    footer{
+        
+        background-position: top 10% right 30% ;
+        background-size:auto;
+        height: 650px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
     }
 }
