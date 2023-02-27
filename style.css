@@ -17,7 +17,7 @@ header{
     height: 700px;
     display: flex;
     flex-direction: column;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
     position: relative;
 }
 nav{
@@ -52,18 +52,21 @@ nav .left ul li a{
 nav .left ul li a:hover{
     border-bottom: 2px solid #AA72B6;
 }
-nav .right input{
+nav form input{
     background-color: white;
     border-style: none;
     outline: none;
-    padding: 10px 25px;
+    padding: 5px 25px;
     border-radius: 50px;
-    cursor: pointer;
     color: #5c5959;
     font-size: 14px;
     font-weight: 550;
-    margin-right: 130px;
+    margin-right: 200px;
+    
 }
+/* nav form:hover input{
+    cursor: pointer;
+} */
 .sec_1{
     width: 100%;
     margin: 20px auto;
@@ -115,60 +118,114 @@ nav .right input{
     opacity: 0.9;
 }
 
-header .image_2 img{
+/* header .image_2 img{
     width: 80vw;
     position: absolute;
     right: 350px;
     bottom: 7%;
     opacity: 1.5;
+} */
+header .image_2{
+    background-image: url(images/waves.png) ;
+    /* background-repeat: no-repeat; */
+    background-position:right top;
+    width: 80%;
+    height: 350px;
+    /* border: 2px solid red; */
+    position: absolute;
+    bottom: -30px;
+    right: 25%;
+    margin: 30px 0;
 }
 /*          Section 2          */
+
 .sec_2{
     width: 100%;
-    height: 120vh;
-    position: relative;
+    height: 100vh;
+    background: url(images/second_section_.png) no-repeat;
+    background-size: 70%;
+    background-position: right 30% top;
+    /* position: relative; */
     /* border: 1px solid red; */
-    margin: 0 auto;
+    /* margin: 0 auto; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.sec_2 .container_1{
+    /* border: 1px solid blue; */
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    position: relative;
 }
 .sec_2 .p_1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     position: absolute;
-    top: 0;
-    left: 50px;
+    top: 10%;
+    left: 5%;
+    height: calc(100%/3);
+    align-self: self-start;
+    
 }
-.sec_2 .p_2{
-    display: block;
-    /* height: 500px; */
-    /* width: 20%; */
-    position: absolute;
-    top: -20px;
-    left: 20%;
-    transform: translate(0,0);
-}
-.sec_2 .p_2 img{
-    width: 90%;
-}
+
 .sec_2 .p_3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     position: absolute;
-    top: 42%;
-    left: 58%;
+    top: 50%;
+    left: 57%;
     transform: translate(-50%,-50%);
+    height: calc(100%/3);
+    align-self: center;
 }
+
 .sec_2 .p_4{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     position: absolute;
-    top: 100%;
+    bottom: -5%;
+    right: 5%;
+    height: calc(100%/3);
+    align-self: self-end;
 }
-.sec_2 .p_4 .content{
+.sec_2 .container_1 .p_cont_1{
+    font-size: 1.5em;
+    color: #5c5959;
+}
+.sec_2 .container_1 .P_cont_2{
+    text-align: center;
+    font-size: 1.1em;
+    color: #5c5959;
+    margin-top: 25px;
+}
+.sec_2 .p_5{
+    display: inline-flex;
+    position: absolute;
+    bottom: -100%;
+    left: 10%;
+}
+.sec_2 .p_5 .content{
     position: relative;
     top: -300px;
     left: 50px;
 }
-.sec_2 .p_4 .content img{
+.sec_2 .p_5 .content img{
     height: 310px;
     position: absolute;
     top: 50%;
     bottom: 0;
 }
-.sec_2 .p_4 .content p{
+.sec_2 .p_5 .content p{
     width: 200px;
     color: white;
     font-weight: 400;
@@ -178,11 +235,130 @@ header .image_2 img{
     left: 100px;
     z-index: 3;
 }
-.sec_2 .p_4 .content p span{
+.sec_2 .p_5 .content p span{
     font-size: 4em;
 }
-.sec_2 .p_5{
-    position: absolute;
-    bottom: 10px;
-    right: 40px;
+/*                Section 3                 */
+
+.sec_3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.sec_3 .top{
+    display: flex;
+    width: 80%;
+    justify-content: space-around;
+    margin-top: 80px;
+} 
+.sec_3 .top .small{
+    height: 50%;
+    align-self: flex-end;
+}
+.sec_3 .top span{
+    align-self: flex-end;
+}
+.sec_3 .top span i{
+    font-size: 1.4em;
+    color: #5c5959;
+}
+.sec_3 .bottom .tex_p_1{
+    font-size: 1.6em;
+    color: #5c5959;
+}
+.sec_3 .bottom .tex_p_2{
+    text-align: center;
+    font-size: 1.2em;
+    color: #5c5959;
+    margin-top: 25px;
+}
+/*                Footer Section 4                 */
+footer{
+    background: url(images/Group\ 1131.png) no-repeat;
+    /* background-size: ; */
+    background-position: top 25% right 60% ;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.sec_4{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 100%;
+}
+.sec_4 .left{
+    width: 30%;
+}
+.sec_4 .left .store{
+    display: flex;
+    
+}
+.sec_4 .left .store .app_store,
+.sec_4 .left .store .ply_store{
+    width: 100px;
+    height: 35px;
+    padding: 10px;
+    margin: 10px;
+    background: white;
+    border-radius: 5px;
+    display: flex;
+}
+.sec_4 .left .store .app_store img,
+.sec_4 .left .store .ply_store img{
+    height: 20px;
+}
+.sec_4 .left .store p{
+    color: #5c5959;
+    font-size: 0.5em;
+    font-weight: 500;
+    line-height: 10px;
+    margin-left: 5px;
+}
+.sec_4 .left .mid{
+    margin: 20px 10px;  
+}
+.sec_4 .left .mid img{
+    height: 20px;
+    margin-right: 10px;
+}
+.sec_4 .left ul{
+    list-style-type: none;
+    margin: 20px 10px; 
+    display: flex;
+}
+.sec_4 .left ul li a{
+    color: white;
+    font-size: 0.7em;
+    margin-right: 30px;
+}
+.sec_4 .right  {
+    width: 62%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+.sec_4 .right .foot_img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-left: 170px;
+}
+.sec_4 .right .foot_img img{
+    width: 800px;
+    align-self: flex-end;
+}
+
+@media (min-width:1400px){
+    header{
+        height: 900px;
+        background-position: center -250px;
+    }
+    .sec_1{
+        margin: 100px auto;
+    }
 }
